@@ -1,0 +1,21 @@
+<div class="movie-wrapper">
+  <div class="movie-image-wrapper">
+    <img src="{{ movie.image }}" alt="">
+  </div>
+  <div class="movie-info-wrapper">
+    <a href="/">Go back</a>
+    <h2>{{movie.title}}</h2>
+    <h3>Director: {{movie.director}}</h4>
+    <h4>Stars</h5>
+    {{#each movie.stars}}
+      <li>{{this}}</li>
+    {{/each}}
+    <p>{{movie.description}}</p>
+    {{#each movie.showtimes}}
+      <span>{{this}}</span> |
+    {{/each}}
+  </div>
+</div>
+
+
+
